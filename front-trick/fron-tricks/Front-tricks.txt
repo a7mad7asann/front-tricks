@@ -1,0 +1,47 @@
+responsive design :
+  - we can use function in css : min ( large value for big value , responsive value ) 
+  	--> padding : min (5em , 8% ) 
+  	
+=========================================================================================================
+ 
+ - responsive font size : 
+ 	- font-size :10 vw; 
+ 	it works on all devices and the text it can be more small or much big 
+ 	
+ 	- clamp ( min value , preferred value , max value); 
+	* font-size : clamp(1.8rem, 10vw , 5rem); but this it's not work in zoom in or out .
+	* font-size : clamp(1.8rem, calc (1rem + 7vw) , 5rem) it can zoom in or out .
+	
+=========================================================================================================
+- responsive image : 
+	* don't use width:100%; it can take it img width 
+	* for seo prefer to add (height and width)value in html 
+	-  for responsive image :
+	{
+	  max-width: 100%;
+	  height: auto;
+	  /* for multiple image */
+	  aspect-ratio: 1/1 ; for same w,h 
+	  	      : 16/9 ; to the image to take it's size 	
+	  	      : 9/16 ; 
+	  object-fit: cover;
+	 }
+=========================================================================================================
+- responsive - height:
+	* 100vh in desk-top it take all the height but phone you need to scroll
+	* 100dvh in phone you don't need to scroll to take the full height 
+	
+=========================================================================================================
+- respomsive - menu :
+	* don't give display:none; for smooth transition 
+	* we can use opacity:0 for interactive style 
+	* we can use 
+		- position :absolute ;
+		- right : -16em; 
+		- transition : right 200ms ease-in-out;
+		
+	      .show{
+		- right:0;
+	       }
+=========================================================================================================
+	
